@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int i, j;
+int matrizA [3][3], matrizB [3][3], matrizC [3][3];
+
+int main (){
+
+    printf("Informe os valores da Matriz A\n");
+    for (i = 0; i < 3; i++){
+        for ( j = 0; j < 3; j++){
+            scanf("%d", &matrizA[i][j]);      
+        }
+    }
+    printf("Informe os valores da Matriz B\n");
+    for (i = 0; i < 3; i++){
+        for ( j = 0; j < 3; j++){
+            scanf("%d", &matrizB[i][j]);
+    }
+    }
+
+ for (i = 0; i < 3; i++){
+        for ( j = 0; j < 3; j++)
+            printf("|%4d", matrizA [i][j] * 2);
+            printf("|\n"); 
+ }
+ printf ("matriz A\n");
+ system("pause");
+
+  for (i = 0; i < 3; i++){
+        for ( j = 0; j < 3; j++)
+            printf("|%4d", matrizB [i][j] * 3);
+            printf("|\n");
+  }
+  	  printf ("Matriz B\n");
+}
